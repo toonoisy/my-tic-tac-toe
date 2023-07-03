@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-// 函数组件：只包含一个 render 方法且不包含 state
 function Square(props) {
   return (
     <button
@@ -126,7 +125,7 @@ class Game extends React.Component {
     } else {
       if (this.state.stepNo === 9) {
         // 平局
-        status = 'Draw';
+        status = 'Let\'s settle for a draw';
       } else {
         status = `Next player: ${this.state.xIsNext ? 'X' : 'O'}`;
       }
